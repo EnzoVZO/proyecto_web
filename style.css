@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  background-color: #212121;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.encabezado {
+  background-color: #333333;
+  padding: 1px;
+}
+
+.todas-imagenes{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.todas-imagenes img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.todas-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/*
+display: flex;                   Usa Flexbox, que permite alinear cosas fácilmente en línea.
+justify-content: center;         Centra las imágenes horizontalmente.
+gap: 20px;                       Deja un espacio entre las imágenes.
+margin-top: 30px;                Le da espacio arriba a la imagen
+:hover                           hace  que este estilo se activa cuando pasas el mouse por encima de la imagen.
+transition: transform 0.3s ease; Hace que cualquier transformación sea animada.
+*/
