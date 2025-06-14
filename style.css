@@ -43,6 +43,7 @@ header p {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
 .btn:hover {
@@ -63,6 +64,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .feature {
@@ -75,61 +77,39 @@ section {
     color: #49a1dc;
 }
 
-.testimonial {
+.feature img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.favorite-item {
     background-color: #282A2C;
-    padding: 20px;
+    padding: 20px 30px; 
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.testimonial p {
-    font-style: italic;
-    margin: 0 0 10px 0;
+.favorite-item h3 {
+    margin-top: 0;
+    color: #49a1dc;
 }
 
-.testimonial cite {
-    font-weight: bold;
-    color: #b0b0b0;
+.favorite-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+.favorite-item li {
+    padding: 5px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #282A2C;
-    color: #f0f0f0;
-    box-sizing: border-box;
-}
-
-button[type="submit"] {
-    width: 100%;
-    cursor: pointer;
-    border: none;
-}
 
 footer {
     background-color: #282A2C;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-}
-
-#image-section {
-    padding-top: 1;
-}
-
-#image-section img {
-    max-width: 100%;
-    display: block; 
-    margin: 0 auto;
-    border-radius: 12px;
 }
