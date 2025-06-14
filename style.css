@@ -1,76 +1,135 @@
-body{
-  margin: 0;
-  background-color: #212121;
-  text-align: center;
-  font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1B1C1D;
+    color: #f0f0f0;
 }
 
-h1{
-  color: #ffffff;
-  margin: 10px;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.encabezado{
-  background-color: #333333;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
 }
 
-input[type="radio"] 
-{
-  display: none;
+header {
+    background-color: #282A2C;
+    text-align: center;
+    padding: 100px 0;
 }
 
-.botones{
-  margin-top: 10px;
-  display: flex;
-  gap: 15px;
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.botones label{
-  background-color: #555555;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
+header p {
+    font-size: 1.2em;
+    color: #b0b0b0;
 }
 
-.botones label:hover{
-  background-color: #777777;
+.btn {
+    display: inline-block;
+    background-color: #006ab0;
+    color: #ececec;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-#btn1:checked ~ .encabezado .botones label[for="btn1"],
-#btn2:checked ~ .encabezado .botones label[for="btn2"],
-#btn3:checked ~ .encabezado .botones label[for="btn3"] 
-{
-  background-color: #7a7a7a;
+.btn:hover {
+    background-color: #82C3ED;
 }
 
-.todas-imagenes{
-  display: none;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
+section {
+    padding: 60px 0;
 }
 
-#btn1:checked ~ .parte1,
-#btn2:checked ~ .parte2,
-#btn3:checked ~ .parte3
-{
-  display: flex;
+#features .container {
+    background-color: #282A2C;
+    padding: 40px;
+    border-radius: 8px;
 }
 
-.todas-imagenes img{
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.todas-imagenes img:hover{
-  transform: scale(1.05);
+.feature {
+    text-align: center;
+    max-width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #49a1dc;
+}
+
+.testimonial {
+    background-color: #282A2C;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    color: #b0b0b0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #282A2C;
+    color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    background-color: #282A2C;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#image-section {
+    padding-top: 1;
+}
+
+#image-section img {
+    max-width: 100%;
+    display: block; 
+    margin: 0 auto;
+    border-radius: 12px;
 }
